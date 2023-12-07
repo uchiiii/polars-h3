@@ -1,0 +1,15 @@
+[package]
+name = "polars_h3"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "polars_h3"
+crate-type = ["cdylib"]
+
+[dependencies]
+h3o = "0.4.0"
+polars = { version = "*"  }
+pyo3 = { version = "*", features = ["extension-module"]  }
+pyo3-polars = { version = "*", features = ["derive"]  }
+serde = { version = "*", features = ["derive"]  }
